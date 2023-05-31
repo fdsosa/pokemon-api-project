@@ -53,12 +53,140 @@ header img {
     color: #3B5BA7;
     padding: .5rem;
     cursor: pointer;
+    border-radius: 0 15px 15px 0;
 }
 
 
 #resultContainer {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#resultContainer #targetPresentation {
+    display: none;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    color: #3B5BA7;
+    border: 2px solid #1e3b7e;
+    background-color: #FECB00;
+    padding: .2rem .8rem;
+}
+
+#resultContainer #targetPresentation h4 {
+    text-align: left;
+    margin: 0;
+}
+
+#resultContainer #targetPresentation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#resultContainer #targetPresentation li {
+    padding: .2rem .4rem;
+    margin: 0 .3rem;
+    color: #f1f1f1;
+    border: 1px solid black;
+    border-radius: 14px;
+    font-size: 10px;
+}
+
+
+#loading-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+  
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* TYPES */
+.normal {
+    background-color: #A8A878;
+}
+
+.fire {
+    background-color: #F08030;
+}
+
+.water {
+    background-color: #6890F0;
+}
+
+.grass {
+    background-color: #6890F0;
+}
+
+.electric {
+    background-color: ##F8D030;
+}
+
+.ice {
+    background-color: #98D8D8;
+}
+
+.fighting {
+    background-color: #C03028;
+}
+
+.poison {
+    background-color: #A040A0;
+}
+
+.ground {
+    background-color: #E0C068;
+}
+
+.flying {
+    background-color: #A890F0;
+}
+
+.psychic {
+    background-color: #B8A038;
+}
+
+.bug {
+    background-color: #A8B820;
+}
+
+.rock {
+    background-color: #B8A038;
+}
+
+.ghost {
+    background-color: #705898;
+}
+
+.dark {
+    background-color: #DBC8CE;
+}
+
+.dragon {
+    background-color: #7038F8;
+}
+
+.steel {
+    background-color: #B8B8D0;
+}
+
+.fairy {
+    background-color: #F0B6BC;
 }
