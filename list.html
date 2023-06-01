@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/77ab098f3a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html">Pokemon Search</a>
+        <img src="./logo.png" alt="Pokémon Logo">
+    </header>
+    <div id="mainContainer">
+        <aside id="filtersContainer">
+            <h4>Filters</h4>
+        </aside>
+        <div id="listContainer">
+            <h4>List</h4>
+            <div id="listAmount">
+                <span id="20-items" class="listButton">20</span>
+                <span id="40-items" class="listButton">40</span>
+                <span id="60-items" class="listButton">60</span>
+            </div>
+            <div id="list">
+            </div>
+            <div id="listNav">
+                <span id="previousList" class="listButton">Previous</span>
+                <span id="nextList" class="listButton">Next</span>
+            </div>
+        </div>
+    </div>
+    <script src="./list.js"></script>
+</body>
+</html>

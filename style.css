@@ -33,14 +33,14 @@ header img {
     justify-content: center;
 }
 
-#searchBar h4 {
+#searchBar h4, #listContainer h4 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 30px;
     color: #FECB00;
-    margin: 0 0 1rem 0;
+    margin: 1rem 0 1rem 0;
 }
 
-#searchBar input {
+#searchBar input, #listContainer input {
     background-color: whitesmoke;
     width: 40%;
     border: 2px solid #FECB00;
@@ -48,7 +48,7 @@ header img {
     padding: .5rem .9rem;
 }
 
-#searchBar i  {
+#searchBar i, #listContainer i  {
     background-color: #FECB00;
     color: #3B5BA7;
     padding: .5rem;
@@ -63,7 +63,7 @@ header img {
     align-items: center;
 }
 
-#resultContainer #targetPresentation {
+.targetPresentation {
     display: none;
     flex-direction: column;
     font-family: 'Roboto Condensed', sans-serif;
@@ -74,12 +74,12 @@ header img {
     padding: .2rem .8rem;
 }
 
-#resultContainer #targetPresentation h4 {
+.targetPresentation h4 {
     text-align: left;
     margin: 0;
 }
 
-#resultContainer #targetPresentation ul {
+.targetPresentation ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +88,7 @@ header img {
     margin: 1rem 0;
 }
 
-#resultContainer #targetPresentation li {
+.targetPresentation li {
     padding: .2rem .4rem;
     margin: 0 .3rem;
     color: #f1f1f1;
@@ -117,6 +117,73 @@ header img {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+
+#listContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#listContainer .targetPresentation {
+    margin: 1rem 1rem;
+}
+
+#listContainer .targetPresentation h4,
+#listContainer .targetPresentation span {
+    color: #3B5BA7;
+}
+
+#mainContainer { 
+    display: flex;
+    width: 100%;
+}
+
+#filtersContainer {
+    max-height: 100vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: #1e3b7e;
+    color: #f1f1f1;
+}
+
+.listButton {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    margin: .5rem 1rem;
+    background-color: #E0C068;
+    color: #1e3b7e;
+    border: 1px solid #1e3b7e;
+    border-radius: 10px;
+}
+
+#listAmount {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#listNav {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
 
 /* TYPES */
 .normal {
