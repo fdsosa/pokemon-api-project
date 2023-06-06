@@ -19,6 +19,28 @@
     <div id="mainContainer">
         <aside id="filtersContainer">
             <h4>Filters</h4>
+            <label for="pet-select">Select a type:</label>
+            <select name="filter" id="filterSelect">
+                <option value="all" selected>All</option>
+                <option value="bug">Bug</option>
+                <option value="dark">Dark</option>
+                <option value="dragon">Dragon</option>
+                <option value="electric">Electric</option>
+                <option value="fighting">Fighting</option>
+                <option value="fairy">Fairy</option>
+                <option value="fire">Fire</option>
+                <option value="flying">Flying</option>
+                <option value="ghost">Ghost</option>
+                <option value="grass">Grass</option>
+                <option value="ground">Ground</option>
+                <option value="ice">Ice</option>
+                <option value="normal">Normal</option>
+                <option value="poison">Poison</option>
+                <option value="psychic">Psychic</option>
+                <option value="rock">Rock</option>
+                <option value="water">Water</option>
+            </select>       
+            <span id="filterButton">Filter</span>     
         </aside>
         <div id="listContainer">
             <h4>List</h4>
@@ -26,6 +48,9 @@
                 <span id="20-items" class="listButton">20</span>
                 <span id="40-items" class="listButton">40</span>
                 <span id="60-items" class="listButton">60</span>
+            </div>
+            <div id="loading-container">
+                <div class="loader"></div>
             </div>
             <div id="list">
             </div>

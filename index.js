@@ -11,6 +11,7 @@ async function getPokemon(pkm) {
 
 async function searchPokemon() {
   let pkmName = document.getElementById('pokemonName').value;
+  pkmName = pkmName.toLowerCase();
   let pkmObject = await getPokemon(pkmName);
   console.log(pkmObject)
   drawPokemon(pkmObject);
@@ -43,7 +44,7 @@ async function drawPokemon(pkm) {
   img.addEventListener("mouseout", () => {img.src = pkm.sprites.front_default})
   */
  //REMOVE PREVIOUS POKEMON IF NEEDED
- let targetContainer = document.getElementById('targetPresentation');
+ let targetContainer = document.getElementById('targetContainer');
   while (targetContainer.hasChildNodes()) {
    targetContainer.removeChild(targetContainer.firstChild);
   }
